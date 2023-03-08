@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reminder app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background: url(img2.jpg);
+        background-size: cover;
+        /* opacity: 0.5; */
+
+
+    }
+    .container{
+        /* background-color: rgb(rgba(211, 73, 96, 0.664), rgba(61, 234, 61, 0.67), rgba(72, 72, 226, 0.522)); */
+        border: 1px solid grey;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.201);
+        /* width: 300px;
+        padding: 40px; */
+        /* padding-bottom: 120px; */
+        /* margin-bottom: 12px; */
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #191919ee;
+        /* text-align: center; */
+        
+    }
+
+    .navbar{
+        /* position: sticky; */
+        /* overflow: hidden; */
+        /* position: fixed; */
+    }
+    
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Notes-Reminder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="srchtxt" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>Welcum to Notes Reminder</h1>
+        <div class="card">
+
+            <div class="card-body" style="background-color: rgba(178, 212, 212, 0.571);">
+                <h5 class="card-title" style="color: black;">Add a Reminder</h5>
+                <textarea class="form-control" style="background: none;" id="addtxt" rows="3"></textarea>
+                <button class="btn btn-primary my-2 mx-2" id="addbtn">ADD</button>
+                
+            </div>
+        </div>
+        <hr>
+        <h2>SAVED NOTES</h2>
+        <hr>
+        <button class="btn btn-primary my-2 mx-2" id="delbtn">Delete All</button>
+        <div id="notes" class="row container-fluid">
+            <!-- <div class="my-2 mx-2 card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">note</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">delete</a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
